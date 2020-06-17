@@ -1,4 +1,6 @@
+
 package com.example.groupproject_groceryapp;
+
 
 import android.content.Context;
 import android.graphics.BitmapFactory;
@@ -83,4 +85,5 @@ public class MyAllergyAdapter extends RecyclerView.Adapter<MyAllergyAdapter.View
 
         }
     }
+
 }

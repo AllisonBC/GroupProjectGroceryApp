@@ -21,7 +21,7 @@ public class FirebaseRecipeModel {
     public FirebaseRecipeModel() {
         mDatabase = FirebaseDatabase.getInstance().getReference();
         listeners = new HashMap<>();
-        Log.i(TAG, "FirebaseRecipeModel: instance");
+
     }
 
     public void getRecipes(Consumer<DataSnapshot> dataChangedCallback, Consumer<DatabaseError> dataErrorCallback) {
