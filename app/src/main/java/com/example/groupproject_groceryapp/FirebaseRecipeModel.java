@@ -1,5 +1,7 @@
 package com.example.groupproject_groceryapp;
 
+import android.util.Log;
+
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -11,6 +13,7 @@ import java.util.HashMap;
 import java.util.function.Consumer;
 
 public class FirebaseRecipeModel {
+    private static final String TAG = FirebaseRecipeModel.class.getSimpleName();
 
     private DatabaseReference mDatabase;
     private HashMap<DatabaseReference, ValueEventListener> listeners;
@@ -18,6 +21,7 @@ public class FirebaseRecipeModel {
     public FirebaseRecipeModel() {
         mDatabase = FirebaseDatabase.getInstance().getReference();
         listeners = new HashMap<>();
+        Log.i(TAG, "FirebaseRecipeModel: instance");
     }
 
     public void getRecipes(Consumer<DataSnapshot> dataChangedCallback, Consumer<DatabaseError> dataErrorCallback) {

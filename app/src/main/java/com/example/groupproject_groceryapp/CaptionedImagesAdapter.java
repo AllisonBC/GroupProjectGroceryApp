@@ -33,7 +33,7 @@ import java.util.List;
 // onBindViewHolder - adds data; gets called when RecyclerView needs to display data in the ViewHolder
 
 /** {@link RecyclerView.Adapter} that can display a {@link Recipe}
-*/
+ */
 public class CaptionedImagesAdapter
         extends RecyclerView.Adapter<CaptionedImagesAdapter.ViewHolder> {
 
@@ -71,7 +71,7 @@ public class CaptionedImagesAdapter
         ingredients = new ArrayList<>();
         instructions = new ArrayList<>();
         names = new ArrayList<>();
-        imageUris = new ArrayList<>();
+//        imageUris = new ArrayList<>();
 
 
 
@@ -110,9 +110,9 @@ public class CaptionedImagesAdapter
         CardView cardView = holder.cardView;
 
         //image
-        String imageUri = imageUris.get(position);
+//        String imageUri = imageUris.get(position);
         ImageView imageView = (ImageView)cardView.findViewById(R.id.card_image);
-        Picasso.get().load(imageUri).into(imageView);
+//        Picasso.get().load(imageUri).into(imageView);
 
         //name
         imageView.setContentDescription(names.get(position));

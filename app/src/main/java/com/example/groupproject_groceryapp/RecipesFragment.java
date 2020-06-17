@@ -22,6 +22,11 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.groupproject_groceryapp.CaptionedImagesAdapter;
+import com.example.groupproject_groceryapp.R;
+import com.example.groupproject_groceryapp.Recipe;
+import com.example.groupproject_groceryapp.RecipeDetailActivity;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,7 +42,7 @@ public class RecipesFragment extends Fragment {
     private ArrayList<Recipe> mDataSet;
     public static final String ARG_DATA_SET = "data-set";
     private ArrayList<String> names;
-    private ArrayList<String> imageUris;
+//    private ArrayList<String> imageUris;
 
     // Mandatory empty constructor to instantiate frag (eg: screen orientation change)
     public RecipesFragment() {
@@ -68,11 +73,11 @@ public class RecipesFragment extends Fragment {
 
 
         names = new ArrayList<>();
-        imageUris = new ArrayList<>();
+//        imageUris = new ArrayList<>();
 
         for(int i = 0; i < names.size(); i++) {
             names.add(mDataSet.get(i).getName());
-            imageUris.add(mDataSet.get(i).getImageUri());
+//            imageUris.add(mDataSet.get(i).getImageUri());
         }
 
 

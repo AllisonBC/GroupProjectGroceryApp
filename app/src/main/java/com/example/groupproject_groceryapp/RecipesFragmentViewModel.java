@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.function.Consumer;
 
 public class RecipesFragmentViewModel {
+    private static final String TAG = RecipesFragmentViewModel.class.getSimpleName();
 
     private FirebaseRecipeModel recipeModel;
 
